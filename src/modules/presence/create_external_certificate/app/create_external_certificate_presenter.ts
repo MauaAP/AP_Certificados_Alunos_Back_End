@@ -18,6 +18,7 @@ const createExternalCertificateController =
 router.get(
   "/create-external-certificate/:presenceId",
   async (req: Request, res: Response) => {
+    console.log("Creating external certificate...");
     await createExternalCertificateController.handle(req, res);
   }
 );
