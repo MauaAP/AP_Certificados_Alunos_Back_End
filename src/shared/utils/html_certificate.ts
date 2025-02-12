@@ -141,7 +141,7 @@ export function getCertificateHtml(jsonInfo: JsonInfo): string {
             <aside class="footerInfo">
                 <div class="cardInfo">
                     <label>Prof. Dr. Rudolf Theoderich Bühler</label>
-                    <label>Coordenador dos Cursos de TI</label>
+                    <label>Coordenador dos cursos de TI</label>
                     <label>CEUN-IMT</label>
                 </div>
                 <div class="cardInfo">
