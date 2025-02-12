@@ -20,6 +20,7 @@ router.post(
   "/create-external-presence",
   //   authenticateToken,
   async (req: Request, res: Response) => {
+    console.log("Creating external presence...");
     await createExternalPresenceController.handle(req, res);
   }
 );
