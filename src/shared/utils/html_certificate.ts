@@ -150,8 +150,8 @@ export function getCertificateHtml(jsonInfo: JsonInfo): string {
                     <label>Reitor</label>
                     <label>CEUN-IMT</label>
                     ` : `
-                    <label>Prof. Dr. Marcello Nitz</label>
-                    <label>Reitor</label>
+                    <label>Prof. Dr. Ana Paula Gonçalves Serra</label>
+                    <label>Pró-Reitora</label>
                     <label>CEUN-IMT</label>
                     `}
                 </div>
