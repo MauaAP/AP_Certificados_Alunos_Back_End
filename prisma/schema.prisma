@@ -13,8 +13,8 @@ model User {
   email     String     @unique
   role      String
   password  String
-  telefone  String     @unique
-  cpf       String     @unique
+  telefone  String
+  cpf       String
   status    String
   presences Presence[]
 }
