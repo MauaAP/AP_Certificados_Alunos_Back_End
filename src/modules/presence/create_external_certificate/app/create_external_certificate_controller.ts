@@ -34,6 +34,7 @@ export class CreateExternalCertificateController {
         .status(201)
         .json({ message: "Certificate created successfully", certificateUrl });
     } catch (error: any) {
+      console.log(error);
       if (error instanceof InvalidRequest) {
         return new BadRequest(error.message).send(res);
       }
