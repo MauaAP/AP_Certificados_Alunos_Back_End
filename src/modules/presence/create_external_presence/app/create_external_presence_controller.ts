@@ -46,6 +46,7 @@ export class CreateExternalPresenceController {
 
       return res.status(200).json(externalPresenceViewModel);
     } catch (error: any) {
+      console.log(error);
       if (error instanceof InvalidRequest) {
         return new BadRequest(error.message).send(res);
       }
