@@ -35,14 +35,6 @@ export class User {
       throw new EntityError("Invalid telefone");
     }
 
-    if (props.cpf && props.cpf.trim().length === 0) {
-      throw new EntityError("Invalid cpf");
-    }
-
-    if (props.cpf && !User.validateCPF(props.cpf)) {
-      throw new EntityError("Invalid cpf");
-    }
-
     if (props.telefone && !User.validatePhoneNumber(props.telefone)) {
       throw new EntityError("Invalid telefone");
     }
