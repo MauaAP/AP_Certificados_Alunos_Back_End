@@ -30,14 +30,6 @@ export class User {
     if (!User.isValidPassword(props.password)) {
       throw new EntityError("Invalid password");
     }
-
-    if (props.telefone && props.telefone.trim().length === 0) {
-      throw new EntityError("Invalid telefone");
-    }
-
-    if (props.telefone && !User.validatePhoneNumber(props.telefone)) {
-      throw new EntityError("Invalid telefone");
-    }
   }
 
   get userId(): string | undefined {
