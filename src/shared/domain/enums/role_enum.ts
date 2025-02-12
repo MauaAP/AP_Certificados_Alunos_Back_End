@@ -2,7 +2,7 @@ export enum ROLE {
   ADMIN = "ADMIN",
   SECRETARY = "SECRETARY",
   MODERATOR = "MODERATOR",
-  PROFESSOR = "PROFESSOR",
+  STUDENT = "STUDENT",
 }
 
 export function toEnum(value: string): ROLE {
@@ -13,8 +13,8 @@ export function toEnum(value: string): ROLE {
       return ROLE.SECRETARY;
     case "MODERATOR":
       return ROLE.MODERATOR;
-    case "PROFESSOR":
-      return ROLE.PROFESSOR;
+    case "STUDENT":
+      return ROLE.STUDENT;
     default:
       throw new Error("Invalid value");
   }
