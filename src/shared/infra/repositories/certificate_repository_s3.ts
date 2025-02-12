@@ -23,7 +23,7 @@ export async function saveCertificate(
 
   const params = {
     Bucket: `${process.env.BUCKET_NAME}`,
-    Key: `${userId}-${eventId}-certificado.pdf`,
+    Key: `CERTIFICADOS-PRINT/${userId}-${eventId}-certificado.pdf`,
     Body: certificatePdf,
   };
   console.log(params.Key);
