@@ -19,10 +19,7 @@ export class CreateUserUsecase {
     if (!User.validateRole(userProps.role)) {
       throw new EntityError("role");
     }
-
-    if (!userProps.cpf || !User.validateCPF(userProps.cpf)) {
-      throw new EntityError("cpf");
-    }
+    
     if (!User.validatestatus(userProps.status)) {
       throw new EntityError("status");
     }
